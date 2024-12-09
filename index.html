@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index</title>
+
+    <script src="https://kit.fontawesome.com/501538f1e1.js" crossorigin="anonymous"></script>
+    <script src="/scripts/import_component.js"></script>
+
+    <script src="/components/Component.js"></script>
+    <script src="/components/header/Header.js"></script>
+    <script src="/components/footer/Footer.js"></script>
+
+    <link rel="stylesheet" href="/styles/reset.css">
+    <link rel="stylesheet" href="/styles/global-properties.css">
+    <link rel="stylesheet" href="/styles/common.css">
+
+    <link rel="stylesheet" href="/components/header/header.css">
+    <link rel="stylesheet" href="/components/footer/footer.css">
+
+    <link rel="stylesheet" href="/styles/index.css">
+</head>
+
+<body>
+    <main class="main">
+        <div id="companies_container" class="main__companiesContainer">
+            <a href="file:///C:/DocMil-320000946651.pdf" class="company__card">
+                <img src="assets/noImage.jpg" alt="Image" class="company__card__logo">
+                <h6 class="company__card__name">Title</h6>
+                <p class="company__card__description">Description</p>
+            </a>
+        </div>
+    </main>
+</body>
+
+<script> import_component(
+        new Header("body", "start", "/about.html")
+    ); </script>
+<script> import_component(
+        new Footer("body", "end")
+    ); </script>
+
+</html>
